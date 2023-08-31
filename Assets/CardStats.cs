@@ -4,6 +4,17 @@ using UnityEngine;
 
 public class CardStats : MonoBehaviour
 {
+    // classes now
+
+    public class CardBlueprint
+    {
+        public string cardName;
+        public string cardDiscription;
+        public string cardType;
+        public int cardInt;
+    }
+    
+    
     // I made the lists into strings because it was easier to code
     // If I want to change the values later convert to int then add/subtract
     List<List<string>> fighterCards = new List<List<string>>();
@@ -24,6 +35,7 @@ public class CardStats : MonoBehaviour
     public void AddFighterCards()
     {
         fighterCards.Add(new List<string> { "attack", "5" });
+        CardStats attack = new CardStats();
     }      
             
     public void AddRangerCards()
