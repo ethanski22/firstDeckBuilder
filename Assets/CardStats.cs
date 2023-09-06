@@ -29,7 +29,6 @@ public class CardStats : MonoBehaviour
     List<List<string>> barbarianCards = new List<List<string>>();
     List<List<string>> warlockCards = new List<List<string>>();
     List<List<string>> sorcererCards = new List<List<string>>();
-    List<List<string>> artificerCards = new List<List<string>>();
 
     // add the cards here
     public void AddFighterCards()
@@ -92,9 +91,4 @@ public class CardStats : MonoBehaviour
     {     
           
     }     
-          
-    public void AddArtificerCards()
-    {
-
-    }
 }
