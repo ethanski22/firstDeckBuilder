@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 53953961}
+  - component: {fileID: 53953962}
   m_Layer: 0
   m_Name: Druid
   m_TagString: Untagged
@@ -154,6 +155,18 @@ Transform:
   m_Father: {fileID: 1263703259}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &53953962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53953960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b28320e8271680149bd387177208f0a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &137720845
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,6 +207,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 428202245}
+  - component: {fileID: 428202246}
   m_Layer: 0
   m_Name: Bard
   m_TagString: Untagged
@@ -216,6 +230,18 @@ Transform:
   m_Father: {fileID: 1263703259}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &428202246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428202244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e83b9c2e02c9234d9fd5c7e44714768, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &508314609
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,6 +251,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 508314610}
+  - component: {fileID: 508314611}
   m_Layer: 0
   m_Name: Warlock
   m_TagString: Untagged
@@ -247,6 +274,18 @@ Transform:
   m_Father: {fileID: 1263703259}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &508314611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508314609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bd6953762124bd41aeddda9c5b2c29d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,6 +379,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 689198271}
+  - component: {fileID: 689198272}
   m_Layer: 0
   m_Name: Wizard
   m_TagString: Untagged
@@ -362,6 +402,18 @@ Transform:
   m_Father: {fileID: 1263703259}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &689198272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689198270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 610fc418da2f67244a6703761317285d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &820861770
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,6 +498,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 888124314}
+  - component: {fileID: 888124315}
   m_Layer: 0
   m_Name: Ranger
   m_TagString: Untagged
@@ -468,6 +521,18 @@ Transform:
   m_Father: {fileID: 1263703259}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &888124315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888124313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43fc0342560c1fb4d91dac14f70d5381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &965278499
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,6 +542,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 965278500}
+  - component: {fileID: 965278501}
   m_Layer: 0
   m_Name: Barbarian
   m_TagString: Untagged
@@ -499,6 +565,18 @@ Transform:
   m_Father: {fileID: 1263703259}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &965278501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965278499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faf8e56367078944e9605e294f69772d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1070969209
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,6 +586,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1070969210}
+  - component: {fileID: 1070969211}
   m_Layer: 0
   m_Name: Rogue
   m_TagString: Untagged
@@ -530,6 +609,18 @@ Transform:
   m_Father: {fileID: 1263703259}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1070969211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070969209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b44d0631db65fe4ba170df951d34238, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1212165438
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,6 +630,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1212165439}
+  - component: {fileID: 1212165440}
   m_Layer: 0
   m_Name: Paladin
   m_TagString: Untagged
@@ -561,6 +653,18 @@ Transform:
   m_Father: {fileID: 1263703259}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1212165440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212165438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc33439074bdb0c48ae7f739711c1f54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1242383371
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,6 +674,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1242383372}
+  - component: {fileID: 1242383373}
   m_Layer: 0
   m_Name: Fighter
   m_TagString: Untagged
@@ -592,6 +697,18 @@ Transform:
   m_Father: {fileID: 1263703259}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1242383373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242383371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b02619c4adef8714cbfbb254c4beda51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1255649581
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,6 +718,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1255649582}
+  - component: {fileID: 1255649583}
   m_Layer: 0
   m_Name: Cleric
   m_TagString: Untagged
@@ -623,6 +741,18 @@ Transform:
   m_Father: {fileID: 1263703259}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1255649583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255649581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bc2b6e8b7939ea47be6d9e666a23097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1263703258
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,6 +867,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1480681476}
+  - component: {fileID: 1480681477}
   m_Layer: 0
   m_Name: Monk
   m_TagString: Untagged
@@ -759,6 +890,18 @@ Transform:
   m_Father: {fileID: 1263703259}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1480681477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480681475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e2a56c55b862ee4bb171793a359dd0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1627262456
 GameObject:
   m_ObjectHideFlags: 0
@@ -768,6 +911,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1627262457}
+  - component: {fileID: 1627262458}
   m_Layer: 0
   m_Name: Sorcerer
   m_TagString: Untagged
@@ -790,6 +934,18 @@ Transform:
   m_Father: {fileID: 1263703259}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1627262458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627262456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72bf14542e9dfa24db6b19d571d35168, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1805644196
 GameObject:
   m_ObjectHideFlags: 0
