@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class BarbarianScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    //
+    public class Character : CharacterStats
     {
-        
+        public Character(string characterName) : base(characterName)
+        {
+            characterName = "Barbarian";
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+    //// Start is called before the first frame update
+    //void Start()
+    //{
+
+    //}
+
+    //// Update is called once per frame
+    //void Update()
+    //{
+
+    //}
 }
+

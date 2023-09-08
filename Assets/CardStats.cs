@@ -6,11 +6,24 @@ public class CardStats : MonoBehaviour
 {
     // classes now
 
-    public class CardBlueprint
+    public class AttackCardBlueprint
     {
         public string cardName;
         public string cardDiscription;
-        public string cardType;
-        public int cardInt;
+        public int cardDammage;
+    }
+
+    public class DefendCardBlueprint
+    {
+        public string cardName;
+        public string cardDiscription;
+        public int cardDefence;
+    }
+
+    public class HealingCardBlueprint
+    {
+        public string cardName;
+        public string cardDiscription;
+        public int cardHealth;
     }
 }
