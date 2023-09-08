@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-    public class PlayerBlueprint
+    public class CharacterBlueprint
     {
         public string characterName;
-        public string characterClass;
     }
 }
