@@ -7,9 +7,34 @@ public class BarbarianScript : MonoBehaviour
     //
     public class Character : CharacterStats
     {
-        public Character(string characterName) : base(characterName)
+        public Character(string characterName, 
+            string characterClass, 
+            int characterHealth, 
+            int characterDefence,
+            int characterWealth,
+            int characterPower,
+            int characterPoison,
+            bool isAlive,
+            int characterPosition) : 
+            base(characterName, 
+                characterClass, 
+                characterHealth, 
+                characterDefence,
+                characterWealth,
+                characterPower,
+                characterPoison,
+                isAlive,
+                characterPosition)
         {
-            characterName = "Barbarian";
+            characterName = "Input Name";
+            characterClass = "Barbarian";
+            characterHealth = 100; // Change the health later to match each class
+            characterDefence = 0;
+            characterWealth = 100;
+            characterPower = 5; // Cards will have a certain amount of power to be able to play
+            characterPoison = 0;
+            isAlive = true;
+            characterPosition = 0;
         }
     }
 
