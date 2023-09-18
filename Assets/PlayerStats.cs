@@ -32,6 +32,7 @@ public class CharacterStats
     public int CharacterPower { get; set; } // Amount of cards that player could play
     public int CharacterPoison { get; set; } 
     public bool IsAlive { get; set; }
+    public bool IsAwake { get; set; }
     public int CharacterPosition { get; set; } // Use this to figure out where to put the character on the screen
 
     // Doing this helps to not create conflicts in our code
@@ -43,6 +44,7 @@ public class CharacterStats
         int characterPower,
         int characterPoison,
         bool isAlive,
+        bool isAwake,
         int characterPosition)
     {
         CharacterName = characterName;
@@ -53,6 +55,7 @@ public class CharacterStats
         CharacterPower = characterPower;
         CharacterPoison = characterPoison;
         IsAlive = isAlive;
+        IsAwake = isAwake;
         CharacterPosition = characterPosition;
     }
 }

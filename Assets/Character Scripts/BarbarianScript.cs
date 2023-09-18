@@ -15,6 +15,7 @@ public class BarbarianScript : MonoBehaviour
             int characterPower,
             int characterPoison,
             bool isAlive,
+            bool isAwake,
             int characterPosition) : 
             base(characterName, 
                 characterClass, 
@@ -24,6 +25,7 @@ public class BarbarianScript : MonoBehaviour
                 characterPower,
                 characterPoison,
                 isAlive,
+                isAwake,
                 characterPosition)
         {
             characterName = "Input Name";
@@ -34,6 +36,7 @@ public class BarbarianScript : MonoBehaviour
             characterPower = 5; // Cards will have a certain amount of power to be able to play
             characterPoison = 0;
             isAlive = true;
+            isAwake = true;
             characterPosition = 0;
         }
     }

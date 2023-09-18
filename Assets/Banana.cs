@@ -13,6 +13,7 @@ public class Banana : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // Displays a message to the console tab in Unity
+        Debug.Log("Banana");
     }
 }
