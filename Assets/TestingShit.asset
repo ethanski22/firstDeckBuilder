@@ -12,3 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d16c6deb59a7e044aa37780ea786664b, type: 3}
   m_Name: TestingShit
   m_EditorClassIdentifier: 
+  characterName: 
+  characterClass: 
+  characterHealth: 0
+  characterDefence: 0
+  characterWealth: 0
+  characterPower: 0
+  characterPoison: 0
+  isAlive: 0
+  isAwake: 0
+  characterPosition: 0
+  characterModel: {fileID: 0}
