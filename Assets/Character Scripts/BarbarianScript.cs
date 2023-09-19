@@ -4,6 +4,21 @@ using UnityEngine;
 
 public class BarbarianScript : MonoBehaviour
 {
+    
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        PlayerPrefs.SetInt("HealthPoints", 100);
+        PlayerPrefs.Save();
+        PlayerPrefs.SetInt("H", 1);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 
     public class Character : CharacterStats
     {
@@ -43,9 +58,4 @@ public class BarbarianScript : MonoBehaviour
 
 
     
-}
-
-public class BarbarianAttackCard
-{
-
 }

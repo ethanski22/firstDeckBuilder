@@ -2,19 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerStats : MonoBehaviour
+[CreateAssetMenu(fileName = "PlayerStats", menuName = "My Game/Player Stats")]
+public class PlayerStats : ScriptableObject
 {
-    //// Start is called before the first frame update
-    //void Start()
-    //{
-
-    //}
-
-    //// Update is called once per frame
-    //void Update()
-    //{
-
-    //}
+    public string characterName;
+    public string characterClass;
+    public int characterHealth;
+    public int characterDefence;
+    public int characterWealth;
+    public int characterPower;
+    public int characterPoison;
+    public bool isAlive;
+    public bool isAwake;
+    public int characterPosition;
+    public GameObject characterModel;
 }
 
 // This class is outside of the PlayerStats class because 
