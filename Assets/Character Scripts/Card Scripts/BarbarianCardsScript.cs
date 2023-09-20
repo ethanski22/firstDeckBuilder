@@ -15,66 +15,83 @@ public class BarbarianCardsScript : MonoBehaviour
     {
         
     }
+
+    void BarbarianCardUpgrades()
+    {
+        PlayerPrefs.SetInt("BarbarianHealCardUpgrade", 0);
+        PlayerPrefs.SetInt("BarbarianAttackCardUpgrade", 0);
+        PlayerPrefs.SetInt("BarbarianDefendCardUpgrade", 0);
+        PlayerPrefs.SetInt("BarbarianRageCardUpgrade", 0);
+        PlayerPrefs.SetInt("BarbarianExtraAttackCardUpgrade", 0);
+        PlayerPrefs.SetInt("BarbarianDangerSenseCardUpgrade", 0);
+        PlayerPrefs.SetInt("BarbarianCriticalHitCardUpgrade", 0);
+        PlayerPrefs.SetInt("BarbarianSlamCardUpgrade", 0);
+        PlayerPrefs.SetInt("BarbarianPrimalInstinksCardUpgrade", 0);
+        PlayerPrefs.SetInt("BarbarianFrenzyCardUpgrade", 0);
+        PlayerPrefs.SetInt("BarbarianRetaliationCardUpgrade", 0);
+        PlayerPrefs.SetInt("BarbarianAxeThrowCardUpgrade", 0);
+        PlayerPrefs.Save();
+    }
 }
 
 public class HealCard
 {
-    public int healAmount = 5;
+    public int healAmount = 5 + (PlayerPrefs.GetInt("BarbarianHealCardUpgrade") * 3);
 }
 
 public class AttackCard
 {
-    public int attackDamage = 5;
+    public int attackDamage = 5 + (PlayerPrefs.GetInt("BarbarianAttackCardUpgrade") * 3);
 }
 
 public class DefendCard
 {
-    public int defendAmount = 5;
+    public int defendAmount = 5 + (PlayerPrefs.GetInt("BarbarianDefendCardUpgrade") * 3);
 }
 
 public class RageCard
 {
-    public int attackMultiplier = 2;
+    public int attackMultiplier = 2 + (PlayerPrefs.GetInt("BarbarianRageCardUpgrade") * 1);
 }
 
 public class ExtraAttackCard
 {
-    public int amountOfExtraAttacks = 1;
+    public int amountOfExtraAttacks = 1 + (PlayerPrefs.GetInt("BarbarianExtraAttackCardUpgrade") * 1);
 }
 
 public class DangerSenseCard
 {
-    public int levelOfPerception = 1;
+    public int levelOfPerception = 1 + (PlayerPrefs.GetInt("BarbarianDangerSenseCardUpgrade") * 1);
 }
 
 public class CriticalHitCard
 {
-    public int amountOfCriticalHits = 1;
+    public int amountOfCriticalHits = 1 + (PlayerPrefs.GetInt("BarbarianCriticalHitCardUpgrade") * 1);
 }
 
 public class SlamCard
 {
-    public int attackDamage = 5;
+    public int attackDamage = 5 + (PlayerPrefs.GetInt("BarbarianSlamCardUpgrade") * 3);
 }
 
 public class PrimalInstinksCard
 {
-    public int amountOfBuffGain = 5;
-    public int amountOfDebuffInflicted = 5;
+    public int amountOfBuffGain = 5 + (PlayerPrefs.GetInt("BarbarianPrimalInstinksCardUpgrade") * 3);
+    public int amountOfDebuffInflicted = 5 + (PlayerPrefs.GetInt("BarbarianPrimalInstinksCardUpgrade") * 3);
 }
 
 public class FrenzyCard
 {
-    public int attackDamage = 5;
-    public int amountOfAttacks = 2;
+    public int attackDamage = 5 + (PlayerPrefs.GetInt("BarbarianFrenzyCardUpgrade") * 3);
+    public int amountOfAttacks = 2 + (PlayerPrefs.GetInt("BarbarianFrenzyCardUpgrade") * 1);
 }
 
 public class RetaliationCard
 {
-    public int retaliationDamage = 2;
+    public int retaliationDamage = 2 + (PlayerPrefs.GetInt("BarbarianRetaliationCardUpgrade") * 1);
 }
 
 public class AxeThrowCard
 {
-    public int attackDamage = 8;
+    public int attackDamage = 8 + (PlayerPrefs.GetInt("BarbarianAxeThrowCardUpgrade") * 4);
 }
