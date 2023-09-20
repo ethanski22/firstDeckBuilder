@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
+    void PlayerStatPrefs()
+    {
+        PlayerPrefs.SetString("PlayerName", "Player");
+        PlayerPrefs.SetInt("PlayerLevel", 0)
+    }
+
     // Start is called before the first frame update
     void Start()
     {
