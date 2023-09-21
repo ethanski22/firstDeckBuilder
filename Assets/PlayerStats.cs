@@ -7,7 +7,7 @@ public class PlayerStats : MonoBehaviour
     void PlayerStatPrefs()
     {
         PlayerPrefs.SetString("PlayerName", "Player");
-        PlayerPrefs.SetInt("PlayerLevel", 0)
+        PlayerPrefs.SetInt("PlayerLevel", 0);
     }
 
     // Start is called before the first frame update
