@@ -40,7 +40,14 @@ public class BarbarianScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (PlayerPrefs.HasKey("BarbarianHP")){
+            Debug.Log("Barbarian has already been created");
+        }
+        else
+        {
+            AwakeBarbarian();
+            Debug.Log("Barbarian will be created");
+        }
     }
 
     // Update is called once per frame
