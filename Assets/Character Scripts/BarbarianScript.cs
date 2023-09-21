@@ -8,6 +8,8 @@ public class BarbarianScript : MonoBehaviour
     void SetStats()
     {
         PlayerPrefs.SetInt("BarbarianHP", 100);
+        PlayerPrefs.SetInt("BarbarianMaxHP", 100);
+        PlayerPrefs.SetInt("BarbarianMP", 10);
         PlayerPrefs.SetInt("BarbarianDefence", 0);
         PlayerPrefs.SetInt("BarbarianPoison", 0);
         PlayerPrefs.SetInt("Money", 0);
@@ -37,10 +39,11 @@ public class BarbarianScript : MonoBehaviour
         BarbarianCardUpgrades();
     }
 
+
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.HasKey("BarbarianHP")){
+        if (PlayerPrefs.HasKey("BarbarianMP")){
             Debug.Log("Barbarian has already been created");
         }
         else

@@ -22,6 +22,24 @@ public class BarbarianCardsScript : MonoBehaviour
 public class HealCard
 {
     public int healAmount = 5 + (PlayerPrefs.GetInt("BarbarianHealCardUpgrade") * 3);
+
+    public void BarbarianHealCardUsed()
+    {
+        int HP = PlayerPrefs.GetInt("BarbarianHP");
+        int afterHealHP;
+
+        if (HP > (PlayerPrefs.GetInt("BarbarianMaxHP") - healAmount))
+        {
+            afterHealHP = PlayerPrefs.GetInt("BarbarianMaxHP");
+        }
+        else
+        {
+            afterHealHP = HP + healAmount;
+        }
+
+        Debug.Log("Barbarian was healed " +  afterHealHP + " HP");
+        PlayerPrefs.SetInt("BarbarianHP", afterHealHP);
+    }
 }
 
 public class AttackCard
@@ -32,6 +50,14 @@ public class AttackCard
 public class DefendCard
 {
     public int defendAmount = 5 + (PlayerPrefs.GetInt("BarbarianDefendCardUpgrade") * 3);
+
+    public void BarbarianDefendCardUsed()
+    {
+        int currentDefence = PlayerPrefs.GetInt("BarbarianDefence");
+
+        Debug.Log("Barbarian gained " + defendAmount + ", now his defense is at " + (currentDefence + defendAmount));
+        PlayerPrefs.SetInt("BarbarianDefence", currentDefence + defendAmount);
+    }
 }
 
 public class RageCard
