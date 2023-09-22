@@ -10,7 +10,8 @@ public class BarbarianScript : MonoBehaviour
         PlayerPrefs.SetInt("BarbarianHP", 100);
         PlayerPrefs.SetInt("BarbarianMaxHP", 100);
         PlayerPrefs.SetInt("BarbarianMP", 10);
-        PlayerPrefs.SetInt("BarbarianDefence", 0);
+        PlayerPrefs.SetInt("BarbarianInitialDefense", 0);
+        PlayerPrefs.SetInt("BarbarianDefense", 0);
         PlayerPrefs.SetInt("BarbarianPoison", 0);
         PlayerPrefs.SetInt("Money", 0);
         PlayerPrefs.Save();

@@ -28,7 +28,7 @@ public class HealCard
         int HP = PlayerPrefs.GetInt("BarbarianHP");
         int afterHealHP;
 
-        if (HP > (PlayerPrefs.GetInt("BarbarianMaxHP") - healAmount))
+        if (HP >= (PlayerPrefs.GetInt("BarbarianMaxHP") - healAmount))
         {
             afterHealHP = PlayerPrefs.GetInt("BarbarianMaxHP");
         }
@@ -53,10 +53,10 @@ public class DefendCard
 
     public void BarbarianDefendCardUsed()
     {
-        int currentDefence = PlayerPrefs.GetInt("BarbarianDefence");
+        int currentDefense = PlayerPrefs.GetInt("BarbarianDefense");
 
-        Debug.Log("Barbarian gained " + defendAmount + ", now his defense is at " + (currentDefence + defendAmount));
-        PlayerPrefs.SetInt("BarbarianDefence", currentDefence + defendAmount);
+        Debug.Log("Barbarian gained " + defendAmount + ", now his defense is at " + (currentDefense + defendAmount));
+        PlayerPrefs.SetInt("BarbarianDefense", currentDefense + defendAmount);
     }
 }
 
