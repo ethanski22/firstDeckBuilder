@@ -6,10 +6,10 @@ using TMPro;
 
 public class ExitButtonClicked : MonoBehaviour
 {
-    [SerializeField] 
+    //[SerializeField] 
 
     public void ExitGameButton()
     {
-        SceneManager.LoadScene();
+        //SceneManager.LoadScene();
     }
 }
