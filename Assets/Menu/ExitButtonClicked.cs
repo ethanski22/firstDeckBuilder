@@ -6,7 +6,7 @@ using TMPro;
 
 public class ExitButtonClicked : MonoBehaviour
 {
-    //[SerializeField] 
+    //[SerializeField] private 
 
     public void ExitGameButton()
     {
