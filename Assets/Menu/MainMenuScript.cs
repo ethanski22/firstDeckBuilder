@@ -9,12 +9,14 @@ public class ExitButtonClicked : MonoBehaviour
 {
     [Header("Levels to Load")]
     public string apple;
+    public string noLoadText;
+    public Text noLoadElement;
 
     public void NewGameClick()
     {
         if (apple == null)
         {
-            SceneManager.LoadScene(apple);
+            //LoadGameButton.enabled = false;
         }
         else
         {
