@@ -10,6 +10,7 @@ public class MainMenuScript2 : MonoBehaviour
     public string loadLevel;
     public string newGameLevel;    
     [SerializeField] private GameObject noSavedGame = null;
+    [SerializeField] private GameObject gameText = null;
 
     public void NewGameButton()
     {
@@ -26,7 +27,18 @@ public class MainMenuScript2 : MonoBehaviour
         else
         {
             noSavedGame.SetActive(true);
+            gameText.SetActive(false);
         }
+    }
+
+    public void PlayerStatsButton()
+    {
+        SceneManager.LoadScene("PlayerStatsScreen");
+    }
+
+    public void SettingButton()
+    {
+        SceneManager.LoadScene("SettingScreen");
     }
 
     public void ExitButton()

@@ -230,6 +230,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1761102066}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1486106586}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &100215655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -506,7 +530,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 131516081}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1247644566}
+        m_TargetAssemblyTypeName: MainMenuScript2, Assembly-CSharp
+        m_MethodName: PlayerStatsButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &214193148
 GameObject:
   m_ObjectHideFlags: 0
@@ -749,7 +785,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 278555375}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1247644566}
+        m_TargetAssemblyTypeName: MainMenuScript2, Assembly-CSharp
+        m_MethodName: LoadGameButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &278555375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1230,7 +1278,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 622047806}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1247644566}
+        m_TargetAssemblyTypeName: MainMenuScript2, Assembly-CSharp
+        m_MethodName: ExitButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 0
 --- !u!1 &634285227
 GameObject:
   m_ObjectHideFlags: 0
@@ -1410,7 +1470,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 634285229}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1247644566}
+        m_TargetAssemblyTypeName: MainMenuScript2, Assembly-CSharp
+        m_MethodName: SettingButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &956645014
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,7 +1572,7 @@ GameObject:
   - component: {fileID: 1247644565}
   - component: {fileID: 1247644566}
   m_Layer: 5
-  m_Name: GameObject
+  m_Name: Script
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1540,7 +1612,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadLevel: 
   newGameLevel: NewGameScreen
-  noSavedGame: {fileID: 0}
+  noSavedGame: {fileID: 1486106586}
+  gameText: {fileID: 1761102066}
 --- !u!1 &1405404443
 GameObject:
   m_ObjectHideFlags: 0
@@ -2358,7 +2431,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2029261590}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1247644566}
+        m_TargetAssemblyTypeName: MainMenuScript2, Assembly-CSharp
+        m_MethodName: NewGameButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2029261590
 MonoBehaviour:
   m_ObjectHideFlags: 0
