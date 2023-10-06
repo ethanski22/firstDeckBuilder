@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SettingScreen.unity
     guid: 6b89b3290117dde4b8401411e38eabe9
   - enabled: 1
+    path: Assets/Scenes/PlayerStatsScreen.unity
+    guid: e029b62fe1bbac24bbc94d5aa17969e4
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects:
