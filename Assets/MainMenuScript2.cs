@@ -12,6 +12,15 @@ public class MainMenuScript2 : MonoBehaviour
     [SerializeField] private GameObject noSavedGame = null;
     [SerializeField] private GameObject gameText = null;
 
+    [Header("Volume settings")]
+    [SerializeField] private Text mainVolumeText = null;
+    [SerializeField] private Text musicVolumeText = null;
+    [SerializeField] private Text effectsVolumeText = null;
+    [SerializeField] private Slider mainVolumeSlider = null;
+    [SerializeField] private Slider musicVolumeSlider = null;
+    [SerializeField] private Slider effectsVolumeSlider = null;
+
+
     public void NewGameButton()
     {
         SceneManager.LoadScene(newGameLevel);
@@ -45,4 +54,18 @@ public class MainMenuScript2 : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void SetMainVolume(int volume)
+    {
+        AudioListener.volume = volume;
+    }
+    public void SetMusicVolume(int volume)
+    {
+        
+    }
+    public void SetEffectsVolume(int volume)
+    {
+        
+    }
+
 }
