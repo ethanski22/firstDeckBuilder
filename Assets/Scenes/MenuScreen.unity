@@ -3942,7 +3942,7 @@ RectTransform:
   m_GameObject: {fileID: 1219637487}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 750131879}
@@ -3950,7 +3950,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 244}
+  m_AnchoredPosition: {x: -0.000061035156, y: 243.99998}
   m_SizeDelta: {x: 369.0977, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1219637489
@@ -4197,9 +4197,9 @@ MonoBehaviour:
   noSavedGame: {fileID: 1486106586}
   gameText: {fileID: 1761102066}
   myMixer: {fileID: 24100000, guid: a654962a855e353449157fe52922ca17, type: 2}
-  mainVolumeText: {fileID: 1034248370}
-  musicVolumeText: {fileID: 326783639}
-  effectsVolumeText: {fileID: 1402953793}
+  mainVolumeText: {fileID: 1034248372}
+  musicVolumeText: {fileID: 326783641}
+  effectsVolumeText: {fileID: 1402953795}
   mainVolumeSlider: {fileID: 1492682601}
   musicVolumeSlider: {fileID: 1242729402}
   effectsVolumeSlider: {fileID: 126114652}
@@ -5015,7 +5015,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.2578735, y: -61.60501}
+  m_AnchoredPosition: {x: -1.2578125, y: -61.60498}
   m_SizeDelta: {x: -952.839, y: -419.917}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1570496404
