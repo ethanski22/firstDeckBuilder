@@ -21,10 +21,10 @@ public class MainMenuScript2 : MonoBehaviour
         }
     }
 
-    public void Update()
-    {
-        SetVolumeText();
-    }
+    //public void Update()
+    //{
+    //    SetVolumeText();
+    //}
 
     [Header("Load game settings")]
     public string loadLevel;
@@ -82,6 +82,22 @@ public class MainMenuScript2 : MonoBehaviour
         SetMusicVolume();
     }
 
+    public void AudioResetButton()
+    {
+        mainVolumeSlider.value = 50;
+        musicVolumeSlider.value = 50;
+        effectsVolumeSlider.value = 50;
+        myMixer.SetFloat("master", Mathf.Log10(50) * 20);
+        myMixer.SetFloat("music", Mathf.Log10(50) * 20);
+        myMixer.SetFloat("SFX", Mathf.Log10(50) * 20);
+        PlayerPrefs.SetFloat("masterVolume", 50);
+        PlayerPrefs.SetFloat("musicVolume", 50);
+        PlayerPrefs.SetFloat("SFXVolume", 50);
+        mainVolumeText.text = "50";
+        musicVolumeText.text = "50";
+        effectsVolumeText.text = "50";
+    }
+
     public void SetMainVolume()
     {
         //AudioListener.volume = volume;
@@ -120,6 +136,24 @@ public class MainMenuScript2 : MonoBehaviour
     {
         mainVolumeText.text = mainVolumeSlider.value.ToString();
         musicVolumeText.text = musicVolumeSlider.value.ToString();
+        effectsVolumeText.text = effectsVolumeSlider.value.ToString();
+        effectsVolumeSlider.value = PlayerPrefs.GetFloat("SFXVolume");
+        musicVolumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
+        mainVolumeSlider.value = PlayerPrefs.GetFloat("masterVolume");
+    }
+
+    public void SetMainVolumeSliderText()
+    {
+        mainVolumeText.text = mainVolumeSlider.value.ToString();
+    }
+
+    public void SetMusicVolumeSliderText()
+    {
+        musicVolumeText.text = musicVolumeSlider.value.ToString();
+    }
+
+    public void SetEffectsVolumeSliderText()
+    {
         effectsVolumeText.text = effectsVolumeSlider.value.ToString();
     }
 }
