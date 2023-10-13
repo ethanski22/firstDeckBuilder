@@ -10,12 +10,13 @@ public class MainMenuScript2 : MonoBehaviour
 {
     public void Start()
     {
-        if (PlayerPrefs.HasKey("mainVolume"))
+        if (PlayerPrefs.HasKey("masterVolume"))
         {
             LoadVolume();
         }
         else
         {
+            SetMainVolume();
             SetMusicVolume();
             SetEffectsVolume();
         }
