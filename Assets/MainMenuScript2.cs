@@ -157,4 +157,9 @@ public class MainMenuScript2 : MonoBehaviour
     {
         effectsVolumeText.text = effectsVolumeSlider.value.ToString();
     }
+
+    public void GraphicsResetButton()
+    {
+
+    }
 }
