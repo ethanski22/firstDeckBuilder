@@ -42,6 +42,13 @@ public class MainMenuScript2 : MonoBehaviour
     [SerializeField] private Slider musicVolumeSlider = null;
     [SerializeField] private Slider effectsVolumeSlider = null;
 
+    [Header("Graphics settings")]
+    [SerializeField] private TMP_Text brightnessText = null;
+    [SerializeField] private Slider brightnessSlider = null;
+    [SerializeField] private Toggle fullScreenToggle = null;
+    [SerializeField] private TMP_Dropdown resoluitonDropdown = null;
+    [SerializeField] private TMP_Dropdown qualityDropdown = null;
+
     public void NewGameButton()
     {
         SceneManager.LoadScene(newGameLevel);
@@ -158,8 +165,48 @@ public class MainMenuScript2 : MonoBehaviour
         effectsVolumeText.text = effectsVolumeSlider.value.ToString();
     }
 
+    public void SetBrightnessSliderText()
+    {
+        brightnessText.text = brightnessSlider.value.ToString();
+    }
+
+    public void GraphicsApplyButton()
+    {
+        float brightness = brightnessSlider.value;
+        int fullScreenValue;
+
+        if (fullScreenToggle.isOn)
+        {
+            fullScreenValue = 1;
+        }
+        else
+        {
+            fullScreenValue = 0;
+        }
+
+        PlayerPrefs.SetFloat("BrightnessValue", brightness);
+        PlayerPrefs.SetInt("FullScreenValue", fullScreenValue);
+    }
+
+    public void LoadGraphics()
+    {
+        
+    }
+
+    public void SetBrightnessText()
+    {
+
+    }
+
+    public void LoadBrightnessText()
+    {
+
+    }
+
     public void GraphicsResetButton()
     {
+        brightnessSlider.value = 50;
+        fullScreenToggle.enabled = true;
 
     }
 }
