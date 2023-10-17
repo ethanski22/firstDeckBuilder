@@ -1,3 +1,5 @@
+// Ignore Spelling: Dropdown
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,12 +15,14 @@ public class MainMenuScript2 : MonoBehaviour
         if (PlayerPrefs.HasKey("masterVolume"))
         {
             LoadVolume();
+            LoadGraphics();
         }
         else
         {
             SetMainVolume();
             SetMusicVolume();
             SetEffectsVolume();
+            SetGraphics();
         }
     }
 
@@ -186,27 +190,63 @@ public class MainMenuScript2 : MonoBehaviour
 
         PlayerPrefs.SetFloat("BrightnessValue", brightness);
         PlayerPrefs.SetInt("FullScreenValue", fullScreenValue);
+        PlayerPrefs.SetInt("ResolutionValue", resoluitonDropdown.value);
+        PlayerPrefs.SetInt("QualityValue", qualityDropdown.value);
     }
 
     public void LoadGraphics()
     {
+        int fullScreenValue = PlayerPrefs.GetInt("FullScreenValue");
+
+        if(fullScreenValue == 1)
+        {
+            fullScreenToggle.isOn = true;
+        }
+        else
+        {
+            fullScreenToggle.isOn = false;
+        }
+
+        brightnessSlider.value = PlayerPrefs.GetFloat("BrightnessValue");
+        brightnessText.text = PlayerPrefs.GetFloat("BrightnessValue").ToString();
         
+        resoluitonDropdown.value = PlayerPrefs.GetInt("ResolutionValue");
+        qualityDropdown.value = PlayerPrefs.GetInt("QualtiyValue");
     }
 
-    public void SetBrightnessText()
+    public void SetGraphics()
     {
-
-    }
-
-    public void LoadBrightnessText()
-    {
-
+        brightnessSlider.value = 50;
+        fullScreenToggle.isOn = true;
+        resoluitonDropdown.value = 0;
+        qualityDropdown.value = 0;
+        brightnessText.text = "50";
+        PlayerPrefs.SetFloat("BrightnessValue", brightnessSlider.value);
+        PlayerPrefs.SetInt("FullScreenValue", 1);
+        PlayerPrefs.SetInt("ResolutionValue", 0);
+        PlayerPrefs.SetInt("QualityValue", 0);
     }
 
     public void GraphicsResetButton()
     {
         brightnessSlider.value = 50;
-        fullScreenToggle.enabled = true;
+        fullScreenToggle.isOn = true;
+        resoluitonDropdown.value = 0;
+        qualityDropdown.value = 0;
+        brightnessText.text = "50";
+        PlayerPrefs.SetFloat("BrightnessValue", brightnessSlider.value);
+        PlayerPrefs.SetInt("FullScreenValue", 1);
+        PlayerPrefs.SetInt("ResolutionValue", 0);
+        PlayerPrefs.SetInt("QualityValue", 0);
+    }
+
+    public void ResolutionDropdown()
+    {
+
+    }
+
+    public void QualityDropdown()
+    {
 
     }
 }
