@@ -225,6 +225,7 @@ public class MainMenuScript2 : MonoBehaviour
         PlayerPrefs.SetInt("FullScreenValue", 1);
         PlayerPrefs.SetInt("ResolutionValue", 0);
         PlayerPrefs.SetInt("QualityValue", 0);
+        FullScreenToggle();
     }
 
     public void GraphicsResetButton()
@@ -238,6 +239,19 @@ public class MainMenuScript2 : MonoBehaviour
         PlayerPrefs.SetInt("FullScreenValue", 1);
         PlayerPrefs.SetInt("ResolutionValue", 0);
         PlayerPrefs.SetInt("QualityValue", 0);
+        FullScreenToggle();
+    }
+
+    public void FullScreenToggle()
+    {
+        if (fullScreenToggle.isOn)
+        {
+            Screen.fullScreen = true;
+        }
+        else
+        {
+            Screen.fullScreen = false;
+        }
     }
 
     public void ResolutionDropdown()

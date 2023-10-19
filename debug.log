@@ -277,3 +277,74 @@
 [1013/125419.534:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
 [1013/125424.550:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
 [1013/144340.382:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
+[1018/042802.712:WARNING:gpu_process_host.cc(1217)] The GPU process has crashed 1 time(s)
+[1018/042802.742:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042802.816:WARNING:gpu_process_host.cc(1217)] The GPU process has crashed 2 time(s)
+[1018/042802.820:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042802.850:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042802.856:WARNING:gpu_process_host.cc(1217)] The GPU process has crashed 3 time(s)
+[1018/042802.879:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042802.880:WARNING:gpu_process_host.cc(1217)] The GPU process has crashed 4 time(s)
+[1018/042802.900:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042802.908:WARNING:gpu_process_host.cc(1217)] The GPU process has crashed 5 time(s)
+[1018/042802.923:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042802.930:WARNING:gpu_process_host.cc(1217)] The GPU process has crashed 6 time(s)
+[1018/042802.954:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042802.983:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.005:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.025:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.044:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.065:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.085:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.103:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.124:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.141:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.160:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.175:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.191:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.199:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.219:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.239:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.249:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.269:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.279:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.299:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.309:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.329:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.339:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.349:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.369:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.379:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.399:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.409:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.427:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.439:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.469:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.489:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.509:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.529:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.549:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.563:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.580:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.590:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.610:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.620:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.630:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.650:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1018/042803.660:ERROR:network_service_instance_impl.cc(262)] Network service crashed, restarting service.
+[1019/011102.598:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
+[1019/011102.599:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
+[1019/011130.490:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
+[1019/011130.492:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
+[1019/011135.506:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
+[1019/011135.506:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
+[1019/011200.738:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
+[1019/011200.738:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
+[1019/011615.450:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
+[1019/011615.452:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
+[1019/011639.412:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
+[1019/011639.413:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
+[1019/011639.433:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
+[1019/011639.434:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
+[1019/011639.746:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
+[1019/011639.749:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
