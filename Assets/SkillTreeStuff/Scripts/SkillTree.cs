@@ -1,39 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 public class SkillTree : MonoBehaviour
 {
-    public static SkillTree skillTree;
-    private void Awake() => skillTree = this;
-
-    public int[] SkillLevels;
-    public int[] SkillCaps;
-    public string[] SkillNames;
-    public string[] SkillDescription;
-
-    public List<Skill> SkillList;
-    public GameObject SkillHolder;
-
-    public int SkillPoint;
+    [SerializeField] private TMP_Text skillPointsText = null;
+    [SerializeField] private TMP_Text damageText = null;
+    [SerializeField] private TMP_Text costText = null;
+    [SerializeField] private Button upgradeDamage = null;
+    [SerializeField] private Button upgradeCost = null;
 
     private void Start()
     {
-        SkillPoint = 20;
+        skillPointsText.text = PlayerPrefs.GetInt("BarbarianSkillPoints").ToString();
+        damageText.text = PlayerPrefs.GetInt("BarbarianUpgradeDamage").ToString();
+        costText.text = PlayerPrefs.GetInt("BarbarianUpgradeCost").ToString();
 
-        SkillLevels = new int[5];
-        SkillCaps = new int[] {1, 2, 2, 5, 5 };
+    }
 
-        SkillNames = new string[] {"Upgrade 1", "Upgrade 2", "Upgrade 3", "Upgrade 4", "Upgrade 5"};
-        SkillDescription = new string[]
-        {
-            "Does something",
-            "Does something else",
-            "Does something cool",
-            "Does something bad ass",
-            "Does"
-        };
+    public void BarbAttackCard()
+    {
 
-        //foreach (var skill in SkillHolder.GetComponentInChildren<Skill>()) SkillList.Add(skill);
+    }
+
+    public void BarbPlayerPrefs()
+    {
+        PlayerPrefs.SetInt("BarbarianUpgradeDamage", 0);
+        PlayerPrefs.SetInt("BarbarianUpgradeCost", 0);
     }
 }

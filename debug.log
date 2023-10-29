@@ -348,3 +348,9 @@
 [1019/011639.434:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
 [1019/011639.746:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
 [1019/011639.749:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
+[1027/125531.103:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
+[1027/125845.199:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
+[1027/125845.200:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
+[1027/125850.219:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
+[1027/150333.199:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
+[1027/150333.213:WARNING:dns_config_service_win.cc(700)] Failed to read DnsConfig.
