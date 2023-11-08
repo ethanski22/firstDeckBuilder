@@ -92,6 +92,15 @@ public class SkillTree : MonoBehaviour
         skillPointsText.text = currentSkillPoints.ToString();
     }
 
+    public void UpdateCardText()
+    {
+        int cardCost = PlayerPrefs.GetInt("BarbarianAttackCardCost");
+        int cardDamage = PlayerPrefs.GetInt("BarbarianAttackCardDamage");
+
+        cardCostText.text = cardCost.ToString();
+        cardDamageText.text = "Deal " + cardDamage.ToString() + " Damage";
+    }
+
     public void BarbPlayerPrefs()
     {
         PlayerPrefs.SetInt("BarbarianUpgradeDamage", 0);
@@ -120,6 +129,7 @@ public class SkillTree : MonoBehaviour
 
         PlayerPrefs.SetInt("BarbarianSkillPoints", skillPoints);
         UpdateSkillPoints() ;
+        UpdateCardText();
     }
 
     public void UpgradeSecondCostButton()
@@ -136,7 +146,8 @@ public class SkillTree : MonoBehaviour
         }
 
         PlayerPrefs.SetInt("BarbarianSkillPoints", skillPoints);
-        UpdateSkillPoints() ;
+        UpdateSkillPoints();
+        UpdateCardText();
     }
     
     public void UpgradeThirdCostButton()
@@ -152,7 +163,8 @@ public class SkillTree : MonoBehaviour
         }
 
         PlayerPrefs.SetInt("BarbarianSkillPoints", skillPoints);
-        UpdateSkillPoints() ;
+        UpdateSkillPoints();
+        UpdateCardText();
         SpecialButtonActive();
     }
 
@@ -171,6 +183,7 @@ public class SkillTree : MonoBehaviour
 
         PlayerPrefs.SetInt("BarbarianSkillPoints", skillPoints);
         UpdateSkillPoints();
+        UpdateCardText();
     }
 
     public void UpgradeSecondDamageButton()
@@ -188,6 +201,7 @@ public class SkillTree : MonoBehaviour
 
         PlayerPrefs.SetInt("BarbarianSkillPoints", skillPoints);
         UpdateSkillPoints();
+        UpdateCardText();
     }
 
     public void UpgradeThirdDamageButton()
@@ -204,6 +218,7 @@ public class SkillTree : MonoBehaviour
 
         PlayerPrefs.SetInt("BarbarianSkillPoints", skillPoints);
         UpdateSkillPoints();
+        UpdateCardText();
         SpecialButtonActive();
     }
 
