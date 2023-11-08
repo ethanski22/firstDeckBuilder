@@ -39,7 +39,7 @@ public class SkillTree : MonoBehaviour
     private void Start()
     {
         skillPointsText.text = PlayerPrefs.GetInt("BarbarianSkillPoints").ToString();
-        damage = PlayerPrefs.GetInt("BarbarianAttakcCardDamage");
+        damage = PlayerPrefs.GetInt("BarbarianAttackCardDamage");
         cost = PlayerPrefs.GetInt("BarbarianAttackCardCost");
         baseButton.enabled = false;
         cardCostText.text = cost.ToString();
@@ -103,15 +103,14 @@ public class SkillTree : MonoBehaviour
 
     public void BarbPlayerPrefs()
     {
-        PlayerPrefs.SetInt("BarbarianUpgradeDamage", 0);
-        PlayerPrefs.SetInt("BarbarianUpgradeCost", 0);
         PlayerPrefs.SetInt("BarbarianAttackCardCost", 5);
-        PlayerPrefs.SetInt("BarbarianAttakcCardDamage", 5);
+        PlayerPrefs.SetInt("BarbarianAttackCardDamage", 5);
     }
 
     public void SetPrefsButton()
     {
         BarbPlayerPrefs();
+        UpdateCardText();
     }
 
      public void UpgradeCostButton()
@@ -127,6 +126,7 @@ public class SkillTree : MonoBehaviour
             upgradeCost2.interactable = true;
         }
 
+        PlayerPrefs.SetInt("BarbarianAttackCardCost", cardCost);
         PlayerPrefs.SetInt("BarbarianSkillPoints", skillPoints);
         UpdateSkillPoints() ;
         UpdateCardText();
@@ -145,6 +145,7 @@ public class SkillTree : MonoBehaviour
             upgradeCost3.interactable = true;
         }
 
+        PlayerPrefs.SetInt("BarbarianAttackCardCost", cardCost);
         PlayerPrefs.SetInt("BarbarianSkillPoints", skillPoints);
         UpdateSkillPoints();
         UpdateCardText();
@@ -162,6 +163,7 @@ public class SkillTree : MonoBehaviour
             upgradeCost3.interactable = false;
         }
 
+        PlayerPrefs.SetInt("BarbarianAttackCardCost", cardCost);
         PlayerPrefs.SetInt("BarbarianSkillPoints", skillPoints);
         UpdateSkillPoints();
         UpdateCardText();
@@ -170,7 +172,7 @@ public class SkillTree : MonoBehaviour
 
     public void UpgradeDamageButton()
     {
-        cardDamage = PlayerPrefs.GetInt("BarbarianAttakcCardDamage");
+        cardDamage = PlayerPrefs.GetInt("BarbarianAttackCardDamage");
         skillPoints = PlayerPrefs.GetInt("BarbarianSkillPoints");
 
         if (skillPoints >= 1)
@@ -181,6 +183,7 @@ public class SkillTree : MonoBehaviour
             upgradeDamage2.interactable = true;
         }
 
+        PlayerPrefs.SetInt("BarbarianAttackCardDamage", cardDamage);
         PlayerPrefs.SetInt("BarbarianSkillPoints", skillPoints);
         UpdateSkillPoints();
         UpdateCardText();
@@ -188,7 +191,7 @@ public class SkillTree : MonoBehaviour
 
     public void UpgradeSecondDamageButton()
     {
-        cardDamage = PlayerPrefs.GetInt("BarbarianAttakcCardDamage");
+        cardDamage = PlayerPrefs.GetInt("BarbarianAttackCardDamage");
         skillPoints = PlayerPrefs.GetInt("BarbarianSkillPoints");
 
         if (skillPoints >= 1)
@@ -199,6 +202,7 @@ public class SkillTree : MonoBehaviour
             upgradeDamage3.interactable = true;
         }
 
+        PlayerPrefs.SetInt("BarbarianAttackCardDamage", cardDamage);
         PlayerPrefs.SetInt("BarbarianSkillPoints", skillPoints);
         UpdateSkillPoints();
         UpdateCardText();
@@ -206,7 +210,7 @@ public class SkillTree : MonoBehaviour
 
     public void UpgradeThirdDamageButton()
     {
-        cardDamage = PlayerPrefs.GetInt("BarbarianAttakcCardDamage");
+        cardDamage = PlayerPrefs.GetInt("BarbarianAttackCardDamage");
         skillPoints = PlayerPrefs.GetInt("BarbarianSkillPoints");
 
         if (skillPoints >= 1)
@@ -216,6 +220,7 @@ public class SkillTree : MonoBehaviour
             upgradeDamage3.interactable = false;
         }
 
+        PlayerPrefs.SetInt("BarbarianAttackCardDamage", cardDamage);
         PlayerPrefs.SetInt("BarbarianSkillPoints", skillPoints);
         UpdateSkillPoints();
         UpdateCardText();
@@ -236,6 +241,11 @@ public class SkillTree : MonoBehaviour
 
     public void UpgradeSpecialButton()
     {
+        skillPoints = PlayerPrefs.GetInt("BarbarianSkillPoints");
 
+        if (skillPoints >= 3)
+        {
+            skillPoints -= 3;
+        }
     }
 }
