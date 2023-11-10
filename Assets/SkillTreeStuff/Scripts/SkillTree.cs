@@ -41,7 +41,6 @@ public class SkillTree : MonoBehaviour
         skillPointsText.text = PlayerPrefs.GetInt("BarbarianSkillPoints").ToString();
         damage = PlayerPrefs.GetInt("BarbarianAttackCardDamage");
         cost = PlayerPrefs.GetInt("BarbarianAttackCardCost");
-        baseButton.enabled = false;
         cardCostText.text = cost.ToString();
         cardDamageText.text = "Deal " + damage.ToString() + " Damage";
 

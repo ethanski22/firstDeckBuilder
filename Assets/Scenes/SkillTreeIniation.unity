@@ -505,13 +505,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd07fe66af21a8d43a5b6f0ed540b462, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SkillLevels: 
-  SkillCaps: 
-  SkillNames: []
-  SkillDescription: []
-  SkillList: []
-  SkillHolder: {fileID: 1517828143}
-  SkillPoint: 0
+  skillPointsText: {fileID: 0}
+  skillPoints: 0
+  baseButton: {fileID: 0}
+  upgradeDamage: {fileID: 0}
+  upgradeDamage2: {fileID: 0}
+  upgradeDamage3: {fileID: 0}
+  upgradeDamageText: {fileID: 0}
+  upgradeDamage2Text: {fileID: 0}
+  upgradeDamage3Text: {fileID: 0}
+  damage: 0
+  upgradeCost: {fileID: 0}
+  upgradeCost2: {fileID: 0}
+  upgradeCost3: {fileID: 0}
+  upgradeCostText: {fileID: 0}
+  upgradeCost2Text: {fileID: 0}
+  upgradeCost3Text: {fileID: 0}
+  upgradeSpecial: {fileID: 0}
+  upgradeSpecialText: {fileID: 0}
+  special: {fileID: 0}
+  cost: 0
+  cardCostText: {fileID: 0}
+  cardCost: 0
+  cardDamageText: {fileID: 0}
+  cardDamage: 0
 --- !u!1 &1517828143
 GameObject:
   m_ObjectHideFlags: 0

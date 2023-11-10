@@ -20,5 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/SkillTreeTry2.unity
+    guid: 8cb03b2466b45144692c242ed759d814
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 4272031b93e2131488dd6bd805f0d1a0, type: 2}
