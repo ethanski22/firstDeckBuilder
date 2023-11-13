@@ -14,10 +14,16 @@ public class DragItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     public Image image5;
 
     [HideInInspector] public Transform parentAfterDrag;
+    public Canvas parentCanvas;
+    Vector3 offset = Vector3.zero;
 
     public void OnBeginDrag(PointerEventData eventData)
     {
         Debug.Log("Begin Drag");
+        Vector2 pos;
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(parentCanvas.transform as RectTransform, eventData.position, parentCanvas.worldCamera, out pos);
+        offset = transform.position - parentCanvas.transform.TransformPoint(pos);
+
         parentAfterDrag = transform.parent;
         transform.SetParent(transform.root);
         transform.SetAsLastSibling();
@@ -34,7 +40,10 @@ public class DragItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     public void OnDrag(PointerEventData eventData)
     {
         Debug.Log("Dragging");
-        transform.position = Input.mousePosition;
+        Vector2 movePos;
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(parentCanvas.transform as RectTransform, eventData.position, parentCanvas.worldCamera, out movePos);
+        transform.position = parentCanvas.transform.TransformPoint(movePos) + offset;
+        //transform.position = Input.mousePosition;
     }
 
     public void OnEndDrag(PointerEventData eventData)
