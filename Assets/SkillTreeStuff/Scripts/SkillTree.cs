@@ -12,7 +12,6 @@ public class SkillTree : MonoBehaviour
 {
     [SerializeField] private TMP_Text skillPointsText = null;
     public int skillPoints = 0;
-    [SerializeField] private Button baseButton = null;
     [SerializeField] private Button upgradeDamage = null;
     [SerializeField] private Button upgradeDamage2 = null;
     [SerializeField] private Button upgradeDamage3 = null;
@@ -245,6 +244,7 @@ public class SkillTree : MonoBehaviour
         if (skillPoints >= 3)
         {
             skillPoints -= 3;
+            upgradeSpecial.interactable = false;
         }
     }
 }
