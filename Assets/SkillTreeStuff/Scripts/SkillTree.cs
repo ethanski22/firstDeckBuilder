@@ -27,6 +27,7 @@ public class SkillTree : MonoBehaviour
     [SerializeField] private TMP_Text upgradeCost3Text = null;
     [SerializeField] private Button upgradeSpecial = null;
     [SerializeField] private TMP_Text upgradeSpecialText = null;
+    [SerializeField] private GameObject specialGameObject = null;
     [SerializeField] private GameObject special = null;
     public int cost;
 
@@ -229,11 +230,11 @@ public class SkillTree : MonoBehaviour
     {
         if (cardDamageText.text == "Deal 8 Damage" && cardCostText.text == "2")
         {
-            special.SetActive(true);
+            specialGameObject.SetActive(true);
         }
         else
         {
-            special.SetActive(false);
+            specialGameObject.SetActive(false);
         }
     }
 
@@ -245,6 +246,7 @@ public class SkillTree : MonoBehaviour
         {
             skillPoints -= 3;
             upgradeSpecial.interactable = false;
+            special.SetActive(true);
         }
     }
 }
