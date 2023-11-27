@@ -58,6 +58,7 @@ public class SkillTree : MonoBehaviour
 
         UpdateSkillPoints();
         SpecialButtonActive();
+        UpgradeButtonsIntractable();
     }
 
     public void GiveSkillPointButton()
@@ -224,6 +225,50 @@ public class SkillTree : MonoBehaviour
         UpdateSkillPoints();
         UpdateCardText();
         SpecialButtonActive();
+    }
+
+    public void UpgradeButtonsIntractable()
+    {
+        cardDamage = PlayerPrefs.GetInt("BarbarianAttackCardDamage");
+        cardCost = PlayerPrefs.GetInt("BarbarianAttackCardCost");
+
+        if (cardDamage == 6)
+        {
+            upgradeDamage.interactable = false;
+        }
+
+        if (cardDamage == 7)
+        {
+            upgradeDamage.interactable = false;
+            upgradeDamage2.interactable = false;
+        }
+        
+        if (cardDamage == 8)
+        {
+            upgradeDamage.interactable = false;
+            upgradeDamage2.interactable = false;
+            upgradeDamage3.interactable = false;
+        }
+
+        if (cardCost == 4)
+        {
+            upgradeCost.interactable = false;
+        }
+
+        if (cardCost == 3)
+        {
+            upgradeCost.interactable = false;
+            upgradeCost2.interactable = false;
+        }
+
+        if (cardCost == 2)
+        {
+            upgradeCost.interactable = false;
+            upgradeCost2.interactable = false;
+            upgradeCost3.interactable = false;
+        }
+
+
     }
 
     public void SpecialButtonActive()
