@@ -236,12 +236,14 @@ public class SkillTree : MonoBehaviour
         if (cardDamage == 6)
         {
             upgradeDamage.interactable = false;
+            upgradeDamage2.interactable = true;
         }
 
         if (cardDamage == 7)
         {
             upgradeDamage.interactable = false;
             upgradeDamage2.interactable = false;
+            upgradeDamage3.interactable = true;
         }
         
         if (cardDamage == 8)
@@ -254,12 +256,14 @@ public class SkillTree : MonoBehaviour
         if (cardCost == 4)
         {
             upgradeCost.interactable = false;
+            upgradeCost2.interactable = true;
         }
 
         if (cardCost == 3)
         {
             upgradeCost.interactable = false;
             upgradeCost2.interactable = false;
+            upgradeCost3.interactable = true;
         }
 
         if (cardCost == 2)

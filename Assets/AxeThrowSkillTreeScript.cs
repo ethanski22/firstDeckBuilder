@@ -28,7 +28,7 @@ public class AxeThrowSkillTreeScript : MonoBehaviour
     [SerializeField] private Button upgradeSpecial = null;
     [SerializeField] private TMP_Text upgradeSpecialText = null;
     [SerializeField] private GameObject specialGameObject = null;
-    [SerializeField] private GameObject special = null;
+    [SerializeField] private GameObject specialPanel = null;
     public int cost;
 
     [SerializeField] private TMP_Text cardCostText = null;
@@ -42,7 +42,7 @@ public class AxeThrowSkillTreeScript : MonoBehaviour
         damage = PlayerPrefs.GetInt("BarbarianAxeThrowCardDamage");
         cost = PlayerPrefs.GetInt("BarbarianAxeThrowCardCost");
         cardCostText.text = cost.ToString();
-        cardDamageText.text = "Deal " + damage.ToString() + " Damage";
+        cardDamageText.text = "Deal " + damage.ToString() + " Damage To All Enemies";
 
         skillPointsText.text = skillPoints.ToString();
 
@@ -98,13 +98,13 @@ public class AxeThrowSkillTreeScript : MonoBehaviour
         int cardDamage = PlayerPrefs.GetInt("BarbarianAxeThrowCardDamage");
 
         cardCostText.text = cardCost.ToString();
-        cardDamageText.text = "Deal " + cardDamage.ToString() + " Damage";
+        cardDamageText.text = "Deal " + cardDamage.ToString() + " Damage To All Enemies";
     }
 
     public void BarbPlayerPrefs()
     {
         PlayerPrefs.SetInt("BarbarianAxeThrowCardCost", 5);
-        PlayerPrefs.SetInt("BarbarianAxeThrowCardDamage", 5);
+        PlayerPrefs.SetInt("BarbarianAxeThrowCardDamage", 3);
     }
 
     public void SetPrefsButton()
@@ -233,18 +233,20 @@ public class AxeThrowSkillTreeScript : MonoBehaviour
         cardDamage = PlayerPrefs.GetInt("BarbarianAxeThrowCardDamage");
         cardCost = PlayerPrefs.GetInt("BarbarianAxeThrowCardCost");
 
-        if (cardDamage == 6)
+        if (cardDamage == 4)
         {
             upgradeDamage.interactable = false;
+            upgradeDamage2.interactable = true;
         }
 
-        if (cardDamage == 7)
+        if (cardDamage == 5)
         {
             upgradeDamage.interactable = false;
             upgradeDamage2.interactable = false;
+            upgradeDamage3.interactable = true;
         }
 
-        if (cardDamage == 8)
+        if (cardDamage == 6)
         {
             upgradeDamage.interactable = false;
             upgradeDamage2.interactable = false;
@@ -254,12 +256,14 @@ public class AxeThrowSkillTreeScript : MonoBehaviour
         if (cardCost == 4)
         {
             upgradeCost.interactable = false;
+            upgradeCost2.interactable = true;
         }
 
         if (cardCost == 3)
         {
             upgradeCost.interactable = false;
             upgradeCost2.interactable = false;
+            upgradeCost3.interactable = true;
         }
 
         if (cardCost == 2)
@@ -274,7 +278,7 @@ public class AxeThrowSkillTreeScript : MonoBehaviour
 
     public void SpecialButtonActive()
     {
-        if (cardDamageText.text == "Deal 8 Damage" && cardCostText.text == "2")
+        if (cardDamageText.text == "Deal 6 Damage To All Enemies" && cardCostText.text == "2")
         {
             specialGameObject.SetActive(true);
         }
@@ -292,7 +296,7 @@ public class AxeThrowSkillTreeScript : MonoBehaviour
         {
             skillPoints -= 3;
             upgradeSpecial.interactable = false;
-            special.SetActive(true);
+            specialPanel.SetActive(true);
         }
     }
 
