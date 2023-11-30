@@ -112,6 +112,7 @@ public class SkillTree : MonoBehaviour
         BarbPlayerPrefs();
         UpdateCardText();
         SpecialButtonActive();
+        UpgradeButtonsIntractable();
     }
 
      public void UpgradeCostButton()

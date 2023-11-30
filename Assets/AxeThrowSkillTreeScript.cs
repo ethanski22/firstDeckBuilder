@@ -112,9 +112,11 @@ public class AxeThrowSkillTreeScript : MonoBehaviour
         BarbPlayerPrefs();
         UpdateCardText();
         SpecialButtonActive();
+        UpgradeButtonsIntractable();
     }
 
     public void UpgradeCostButton()
+
     {
         cardCost = PlayerPrefs.GetInt("BarbarianAxeThrowCardCost");
         skillPoints = PlayerPrefs.GetInt("BarbarianSkillPoints");
