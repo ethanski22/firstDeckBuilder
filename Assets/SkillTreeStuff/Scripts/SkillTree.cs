@@ -39,8 +39,8 @@ public class SkillTree : MonoBehaviour
     private void Start()
     {
         skillPointsText.text = PlayerPrefs.GetInt("BarbarianSkillPoints").ToString();
-        damage = PlayerPrefs.GetInt("BarbarianAxeThrowCardDamage");
-        cost = PlayerPrefs.GetInt("BarbarianAxeThrowCardCost");
+        damage = PlayerPrefs.GetInt("BarbarianCriticalHitCardDamage");
+        cost = PlayerPrefs.GetInt("BarbarianCriticalHitCardCost");
         cardCostText.text = cost.ToString();
         cardDamageText.text = "Deal " + damage.ToString() + " Damage";
 
@@ -94,8 +94,8 @@ public class SkillTree : MonoBehaviour
 
     public void UpdateCardText()
     {
-        int cardCost = PlayerPrefs.GetInt("BarbarianAxeThrowCardCost");
-        int cardDamage = PlayerPrefs.GetInt("BarbarianAxeThrowCardDamage");
+        int cardCost = PlayerPrefs.GetInt("BarbarianCriticalHitCardCost");
+        int cardDamage = PlayerPrefs.GetInt("BarbarianCriticalHitCardDamage");
 
         cardCostText.text = cardCost.ToString();
         cardDamageText.text = "Deal " + cardDamage.ToString() + " Damage";
@@ -103,8 +103,8 @@ public class SkillTree : MonoBehaviour
 
     public void BarbPlayerPrefs()
     {
-        PlayerPrefs.SetInt("BarbarianAxeThrowCardCost", 5);
-        PlayerPrefs.SetInt("BarbarianAxeThrowCardDamage", 5);
+        PlayerPrefs.SetInt("BarbarianCriticalHitCardCost", 5);
+        PlayerPrefs.SetInt("BarbarianCriticalHitCardDamage", 5);
     }
 
     public void SetPrefsButton()
@@ -117,7 +117,7 @@ public class SkillTree : MonoBehaviour
 
      public void UpgradeCostButton()
     {
-        cardCost = PlayerPrefs.GetInt("BarbarianAxeThrowCardCost");
+        cardCost = PlayerPrefs.GetInt("BarbarianCriticalHitCardCost");
         skillPoints = PlayerPrefs.GetInt("BarbarianSkillPoints");
 
         if (skillPoints >= 1)
@@ -128,7 +128,7 @@ public class SkillTree : MonoBehaviour
             upgradeCost2.interactable = true;
         }
 
-        PlayerPrefs.SetInt("BarbarianAxeThrowCardCost", cardCost);
+        PlayerPrefs.SetInt("BarbarianCriticalHitCardCost", cardCost);
         PlayerPrefs.SetInt("BarbarianSkillPoints", skillPoints);
         UpdateSkillPoints() ;
         UpdateCardText();
@@ -136,7 +136,7 @@ public class SkillTree : MonoBehaviour
 
     public void UpgradeSecondCostButton()
     {
-        cardCost = PlayerPrefs.GetInt("BarbarianAxeThrowCardCost");
+        cardCost = PlayerPrefs.GetInt("BarbarianCriticalHitCardCost");
         skillPoints = PlayerPrefs.GetInt("BarbarianSkillPoints");
 
         if (skillPoints >= 1)
@@ -147,7 +147,7 @@ public class SkillTree : MonoBehaviour
             upgradeCost3.interactable = true;
         }
 
-        PlayerPrefs.SetInt("BarbarianAxeThrowCardCost", cardCost);
+        PlayerPrefs.SetInt("BarbarianCriticalHitCardCost", cardCost);
         PlayerPrefs.SetInt("BarbarianSkillPoints", skillPoints);
         UpdateSkillPoints();
         UpdateCardText();
@@ -155,7 +155,7 @@ public class SkillTree : MonoBehaviour
     
     public void UpgradeThirdCostButton()
     {
-        cardCost = PlayerPrefs.GetInt("BarbarianAxeThrowCardCost");
+        cardCost = PlayerPrefs.GetInt("BarbarianCriticalHitCardCost");
         skillPoints = PlayerPrefs.GetInt("BarbarianSkillPoints");
 
         if (skillPoints >= 1)
@@ -165,7 +165,7 @@ public class SkillTree : MonoBehaviour
             upgradeCost3.interactable = false;
         }
 
-        PlayerPrefs.SetInt("BarbarianAxeThrowCardCost", cardCost);
+        PlayerPrefs.SetInt("BarbarianCriticalHitCardCost", cardCost);
         PlayerPrefs.SetInt("BarbarianSkillPoints", skillPoints);
         UpdateSkillPoints();
         UpdateCardText();
@@ -174,7 +174,7 @@ public class SkillTree : MonoBehaviour
 
     public void UpgradeDamageButton()
     {
-        cardDamage = PlayerPrefs.GetInt("BarbarianAxeThrowCardDamage");
+        cardDamage = PlayerPrefs.GetInt("BarbarianCriticalHitCardDamage");
         skillPoints = PlayerPrefs.GetInt("BarbarianSkillPoints");
 
         if (skillPoints >= 1)
@@ -185,7 +185,7 @@ public class SkillTree : MonoBehaviour
             upgradeDamage2.interactable = true;
         }
 
-        PlayerPrefs.SetInt("BarbarianAxeThrowCardDamage", cardDamage);
+        PlayerPrefs.SetInt("BarbarianCriticalHitCardDamage", cardDamage);
         PlayerPrefs.SetInt("BarbarianSkillPoints", skillPoints);
         UpdateSkillPoints();
         UpdateCardText();
@@ -193,7 +193,7 @@ public class SkillTree : MonoBehaviour
 
     public void UpgradeSecondDamageButton()
     {
-        cardDamage = PlayerPrefs.GetInt("BarbarianAxeThrowCardDamage");
+        cardDamage = PlayerPrefs.GetInt("BarbarianCriticalHitCardDamage");
         skillPoints = PlayerPrefs.GetInt("BarbarianSkillPoints");
 
         if (skillPoints >= 1)
@@ -204,7 +204,7 @@ public class SkillTree : MonoBehaviour
             upgradeDamage3.interactable = true;
         }
 
-        PlayerPrefs.SetInt("BarbarianAxeThrowCardDamage", cardDamage);
+        PlayerPrefs.SetInt("BarbarianCriticalHitCardDamage", cardDamage);
         PlayerPrefs.SetInt("BarbarianSkillPoints", skillPoints);
         UpdateSkillPoints();
         UpdateCardText();
@@ -212,7 +212,7 @@ public class SkillTree : MonoBehaviour
 
     public void UpgradeThirdDamageButton()
     {
-        cardDamage = PlayerPrefs.GetInt("BarbarianAxeThrowCardDamage");
+        cardDamage = PlayerPrefs.GetInt("BarbarianCriticalHitCardDamage");
         skillPoints = PlayerPrefs.GetInt("BarbarianSkillPoints");
 
         if (skillPoints >= 1)
@@ -222,7 +222,7 @@ public class SkillTree : MonoBehaviour
             upgradeDamage3.interactable = false;
         }
 
-        PlayerPrefs.SetInt("BarbarianAxeThrowCardDamage", cardDamage);
+        PlayerPrefs.SetInt("BarbarianCriticalHitCardDamage", cardDamage);
         PlayerPrefs.SetInt("BarbarianSkillPoints", skillPoints);
         UpdateSkillPoints();
         UpdateCardText();
@@ -231,8 +231,8 @@ public class SkillTree : MonoBehaviour
 
     public void UpgradeButtonsIntractable()
     {
-        cardDamage = PlayerPrefs.GetInt("BarbarianAxeThrowCardDamage");
-        cardCost = PlayerPrefs.GetInt("BarbarianAxeThrowCardCost");
+        cardDamage = PlayerPrefs.GetInt("BarbarianCriticalHitCardDamage");
+        cardCost = PlayerPrefs.GetInt("BarbarianCriticalHitCardCost");
 
         if (cardDamage == 6)
         {
