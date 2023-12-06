@@ -42,7 +42,7 @@ public class CriticalHitSkillTreeScript : MonoBehaviour
         damage = PlayerPrefs.GetFloat("BarbarianCriticalHitCardDamage");
         cost = PlayerPrefs.GetInt("BarbarianCriticalHitCardCost");
         cardCostText.text = cost.ToString();
-        cardDamageText.text = "Your Next Attack Deals  " + cardDamage.ToString() + "X Damage";
+        cardDamageText.text = "Your Next Attack Deals  " + damage.ToString() + "X Damage";
 
         skillPointsText.text = skillPoints.ToString();
 
@@ -181,7 +181,7 @@ public class CriticalHitSkillTreeScript : MonoBehaviour
         if (skillPoints >= 1)
         {
             skillPoints -= 1;
-            cardDamage += 1;
+            cardDamage += (float).5;
             upgradeDamage.interactable = false;
             upgradeDamage2.interactable = true;
         }
@@ -200,7 +200,7 @@ public class CriticalHitSkillTreeScript : MonoBehaviour
         if (skillPoints >= 1)
         {
             skillPoints -= 1;
-            cardDamage += 1;
+            cardDamage += (float).5;
             upgradeDamage2.interactable = false;
             upgradeDamage3.interactable = true;
         }
@@ -219,7 +219,7 @@ public class CriticalHitSkillTreeScript : MonoBehaviour
         if (skillPoints >= 1)
         {
             skillPoints -= 1;
-            cardDamage += 1;
+            cardDamage += (float).5;
             upgradeDamage3.interactable = false;
         }
 
@@ -280,7 +280,7 @@ public class CriticalHitSkillTreeScript : MonoBehaviour
 
     public void SpecialButtonActive()
     {
-        if (cardDamageText.text == "Your Next Attack Deals 3X Damage" && cardCostText.text == "0")
+        if (PlayerPrefs.GetFloat("BarbarianCriticalHitCardDamage") == 3 && PlayerPrefs.GetInt("BarbarianCriticalHitCardCost") == 0)
         {
             specialGameObject.SetActive(true);
         }
