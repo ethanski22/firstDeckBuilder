@@ -18,7 +18,7 @@ public class DangerSenseSkillTreeScript : MonoBehaviour
     [SerializeField] private TMP_Text upgradeDurationText = null;
     [SerializeField] private TMP_Text upgradeDuration2Text = null;
     [SerializeField] private TMP_Text upgradeDuration3Text = null;
-    public int damage;
+    public int duration;
     [SerializeField] private Button upgradeCost = null;
     [SerializeField] private Button upgradeCost2 = null;
     [SerializeField] private Button upgradeCost3 = null;
@@ -39,10 +39,10 @@ public class DangerSenseSkillTreeScript : MonoBehaviour
     private void Start()
     {
         skillPointsText.text = PlayerPrefs.GetInt("BarbarianSkillPoints").ToString();
-        damage = PlayerPrefs.GetInt("BarbarianAxeThrowCardDamage");
-        cost = PlayerPrefs.GetInt("BarbarianAxeThrowCardCost");
+        duration = PlayerPrefs.GetInt("BarbarianDangerSenseCardDuration");
+        cost = PlayerPrefs.GetInt("BarbarianDangerSenseCardCost");
         cardCostText.text = cost.ToString();
-        cardDurationText.text = "Deal " + damage.ToString() + " Damage To All Enemies";
+        cardDurationText.text = "Show Enemy Intentions";
 
         skillPointsText.text = skillPoints.ToString();
 
@@ -94,17 +94,17 @@ public class DangerSenseSkillTreeScript : MonoBehaviour
 
     public void UpdateCardText()
     {
-        int cardCost = PlayerPrefs.GetInt("BarbarianAxeThrowCardCost");
-        int cardDuration = PlayerPrefs.GetInt("BarbarianAxeThrowCardDamage");
+        int cardCost = PlayerPrefs.GetInt("BarbarianDangerSenseCardCost");
+        int cardDuration = PlayerPrefs.GetInt("BarbarianDangerSenseCardDuration");
 
         cardCostText.text = cardCost.ToString();
-        cardDurationText.text = "Deal " + cardDuration.ToString() + " Damage To All Enemies";
+        cardDurationText.text = "Show Enemy Intentions";
     }
 
     public void BarbPlayerPrefs()
     {
-        PlayerPrefs.SetInt("BarbarianAxeThrowCardCost", 5);
-        PlayerPrefs.SetInt("BarbarianAxeThrowCardDamage", 3);
+        PlayerPrefs.SetInt("BarbarianDangerSenseCardCost", 4);
+        PlayerPrefs.SetInt("BarbarianDangerSenseCardDuration", 0);
     }
 
     public void SetPrefsButton()
@@ -118,7 +118,7 @@ public class DangerSenseSkillTreeScript : MonoBehaviour
     public void UpgradeCostButton()
 
     {
-        cardCost = PlayerPrefs.GetInt("BarbarianAxeThrowCardCost");
+        cardCost = PlayerPrefs.GetInt("BarbarianDangerSenseCardCost");
         skillPoints = PlayerPrefs.GetInt("BarbarianSkillPoints");
 
         if (skillPoints >= 1)
@@ -129,7 +129,7 @@ public class DangerSenseSkillTreeScript : MonoBehaviour
             upgradeCost2.interactable = true;
         }
 
-        PlayerPrefs.SetInt("BarbarianAxeThrowCardCost", cardCost);
+        PlayerPrefs.SetInt("BarbarianDangerSenseCardCost", cardCost);
         PlayerPrefs.SetInt("BarbarianSkillPoints", skillPoints);
         UpdateSkillPoints();
         UpdateCardText();
@@ -137,7 +137,7 @@ public class DangerSenseSkillTreeScript : MonoBehaviour
 
     public void UpgradeSecondCostButton()
     {
-        cardCost = PlayerPrefs.GetInt("BarbarianAxeThrowCardCost");
+        cardCost = PlayerPrefs.GetInt("BarbarianDangerSenseCardCost");
         skillPoints = PlayerPrefs.GetInt("BarbarianSkillPoints");
 
         if (skillPoints >= 1)
@@ -148,7 +148,7 @@ public class DangerSenseSkillTreeScript : MonoBehaviour
             upgradeCost3.interactable = true;
         }
 
-        PlayerPrefs.SetInt("BarbarianAxeThrowCardCost", cardCost);
+        PlayerPrefs.SetInt("BarbarianDangerSenseCardCost", cardCost);
         PlayerPrefs.SetInt("BarbarianSkillPoints", skillPoints);
         UpdateSkillPoints();
         UpdateCardText();
@@ -156,7 +156,7 @@ public class DangerSenseSkillTreeScript : MonoBehaviour
 
     public void UpgradeThirdCostButton()
     {
-        cardCost = PlayerPrefs.GetInt("BarbarianAxeThrowCardCost");
+        cardCost = PlayerPrefs.GetInt("BarbarianDangerSenseCardCost");
         skillPoints = PlayerPrefs.GetInt("BarbarianSkillPoints");
 
         if (skillPoints >= 1)
@@ -166,16 +166,16 @@ public class DangerSenseSkillTreeScript : MonoBehaviour
             upgradeCost3.interactable = false;
         }
 
-        PlayerPrefs.SetInt("BarbarianAxeThrowCardCost", cardCost);
+        PlayerPrefs.SetInt("BarbarianDangerSenseCardCost", cardCost);
         PlayerPrefs.SetInt("BarbarianSkillPoints", skillPoints);
         UpdateSkillPoints();
         UpdateCardText();
         SpecialButtonActive();
     }
 
-    public void upgradeDurationButton()
+    public void UpgradeDurationButton()
     {
-        cardDuration = PlayerPrefs.GetInt("BarbarianAxeThrowCardDamage");
+        cardDuration = PlayerPrefs.GetInt("BarbarianDangerSenseCardDuration");
         skillPoints = PlayerPrefs.GetInt("BarbarianSkillPoints");
 
         if (skillPoints >= 1)
@@ -186,15 +186,15 @@ public class DangerSenseSkillTreeScript : MonoBehaviour
             upgradeDuration2.interactable = true;
         }
 
-        PlayerPrefs.SetInt("BarbarianAxeThrowCardDamage", cardDuration);
+        PlayerPrefs.SetInt("BarbarianDangerSenseCardDuration", cardDuration);
         PlayerPrefs.SetInt("BarbarianSkillPoints", skillPoints);
         UpdateSkillPoints();
         UpdateCardText();
     }
 
-    public void UpgradeSecondDamageButton()
+    public void UpgradeSecondDurationButton()
     {
-        cardDuration = PlayerPrefs.GetInt("BarbarianAxeThrowCardDamage");
+        cardDuration = PlayerPrefs.GetInt("BarbarianDangerSenseCardDuration");
         skillPoints = PlayerPrefs.GetInt("BarbarianSkillPoints");
 
         if (skillPoints >= 1)
@@ -205,15 +205,15 @@ public class DangerSenseSkillTreeScript : MonoBehaviour
             upgradeDuration3.interactable = true;
         }
 
-        PlayerPrefs.SetInt("BarbarianAxeThrowCardDamage", cardDuration);
+        PlayerPrefs.SetInt("BarbarianDangerSenseCardDuration", cardDuration);
         PlayerPrefs.SetInt("BarbarianSkillPoints", skillPoints);
         UpdateSkillPoints();
         UpdateCardText();
     }
 
-    public void UpgradeThirdDamageButton()
+    public void UpgradeThirdDurationButton()
     {
-        cardDuration = PlayerPrefs.GetInt("BarbarianAxeThrowCardDamage");
+        cardDuration = PlayerPrefs.GetInt("BarbarianDangerSenseCardDuration");
         skillPoints = PlayerPrefs.GetInt("BarbarianSkillPoints");
 
         if (skillPoints >= 1)
@@ -223,7 +223,7 @@ public class DangerSenseSkillTreeScript : MonoBehaviour
             upgradeDuration3.interactable = false;
         }
 
-        PlayerPrefs.SetInt("BarbarianAxeThrowCardDamage", cardDuration);
+        PlayerPrefs.SetInt("BarbarianDangerSenseCardDuration", cardDuration);
         PlayerPrefs.SetInt("BarbarianSkillPoints", skillPoints);
         UpdateSkillPoints();
         UpdateCardText();
@@ -232,8 +232,8 @@ public class DangerSenseSkillTreeScript : MonoBehaviour
 
     public void UpgradeButtonsIntractable()
     {
-        cardDuration = PlayerPrefs.GetInt("BarbarianAxeThrowCardDamage");
-        cardCost = PlayerPrefs.GetInt("BarbarianAxeThrowCardCost");
+        cardDuration = PlayerPrefs.GetInt("BarbarianDangerSenseCardDuration");
+        cardCost = PlayerPrefs.GetInt("BarbarianDangerSenseCardCost");
 
         if (cardDuration == 1)
         {
@@ -274,13 +274,11 @@ public class DangerSenseSkillTreeScript : MonoBehaviour
             upgradeCost2.interactable = false;
             upgradeCost3.interactable = false;
         }
-
-
     }
 
     public void SpecialButtonActive()
     {
-        if (cardDurationText.text == "Deal 6 Damage To All Enemies" && cardCostText.text == "2")
+        if (PlayerPrefs.GetInt("BarbarianDangerSenseCardDuration") == 3 && PlayerPrefs.GetInt("BarbarianDangerSenseCardCost") == 1)
         {
             specialGameObject.SetActive(true);
         }
